@@ -6,7 +6,7 @@ In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify
 
 
 ### Architecture
-![Architecture Diagram]()
+![Architecture Diagram](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/df90a53740d9bf26fb273cf9a1116150d1431098/Architecture%20Diagram.png)
 
 
 
