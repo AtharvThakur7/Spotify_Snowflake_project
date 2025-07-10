@@ -1,18 +1,35 @@
-# Spotify Data Pipeline to extract data , transform it and use it for Bussiness Analysis to understand Top and Trending  Playlists , songs , Artists and Albums .
+# 🎧 Spotify Data Pipeline - ETL with AWS & Snowflake
 
 ### Introduction
 
-In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify API , AWS cloud and Snowflake DB. The Project aims at using the playlist from Spotify API and transforming and storing cleaned data in AWS cloud storage and utilizing the data in snowflake using snowpipe.
+This project implements a fully automated ETL (Extract, Transform, Load) data pipeline that ingests data from the Spotify API, processes it through AWS services, and loads it into Snowflake using SnowPipe for analytics using Power BI.
 
 
 ### Architecture
 ![Architecture Diagram](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/df90a53740d9bf26fb273cf9a1116150d1431098/Architecture%20Diagram.png)
 
 
+#### 1. Extract
+- Source: Spotify Web API
+- Scheduler: Amazon CloudWatch triggers the pipeline daily.
+- Extraction Logic: A Python script (packaged in AWS Lambda) retrieves streaming data such as playlists, tracks, and artists.
+- Storage: Raw data is saved to Amazon S3 (Raw Zone) in JSON/CSV format.
+
+#### 2. Transform
+- Trigger: An S3 PutObject event initiates the transformation process.
+- Transformation Logic: Another AWS Lambda function processes the raw data (e.g., flattening nested JSON, standardizing timestamps, removing nulls).
+- Output: Cleaned and structured data is stored in Amazon S3 (Transformed Zone).
+#### 3. Load
+- Snowpipe: Snowflake's continuous data ingestion tool (Snowpipe) loads transformed files from S3.
+- Warehouse: The data resides in Snowflake tables, optimized for analytics.
+- BI Layer: Power BI connects to Snowflake for building interactive dashboards.
+
 
 ### Schema Used : 
 
-![Schema Design]()
+![Schema Design](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/ca043942fd928431361529709c3be98cea852447/Screenshot%202025-07-10%20142656.png)
+
+
 
 
 
@@ -35,6 +52,13 @@ In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify
 
 ### DashBoard
 ![Spotify_Dashboard](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/8e7b211186a18fba0b56c898191ebe0d3dfeca07/Screenshot%202025-07-10%20140110.png)
+
+
+
+### Conclusion
+
+
+This Spotify Data Pipeline showcases a scalable and serverless ETL architecture using modern cloud-native tools. By leveraging AWS Lambda, S3, Snowflake, and Power BI, it enables seamless automation from data ingestion to visualization. The modular design allows easy adaptation for other APIs or data sources, making it a strong foundation for real-time or batch analytics in the music domain or beyond.
 
 
 
