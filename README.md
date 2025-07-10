@@ -27,6 +27,8 @@ In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify
 
 8. **PowerBI:** Power BI is a business analytics service by Microsoft that allows organizations to connect to various data sources, transform and clean data, create interactive visualizations, and share insights with others.
 
+### DashBoard
+![Spotify_Dashboard](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/8e7b211186a18fba0b56c898191ebe0d3dfeca07/Screenshot%202025-07-10%20140110.png)
 
 
 
