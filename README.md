@@ -32,6 +32,3 @@ In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify
 
 
 
-
-### Dashboard
-![Architecture Diagram]()
