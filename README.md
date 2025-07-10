@@ -1,4 +1,4 @@
-# Spotify Data Pipeline to extract data , tarnform it and use it for Bussiness Analysis to understand Top and Trending  Playlists , songs , Artists and Albums .
+# Spotify Data Pipeline to extract data , transform it and use it for Bussiness Analysis to understand Top and Trending  Playlists , songs , Artists and Albums .
 
 ### Introduction
 
