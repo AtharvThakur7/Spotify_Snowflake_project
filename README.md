@@ -10,6 +10,12 @@ In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify
 
 
 
+### Schema Used : 
+
+![Schema Design]()
+
+
+
 ### Services Used
 1. **AWS S3(Simple Storage Service):** AWS S3 is a highly saclable object storage service used for storing and retrieving any amount of data from anywhere using web. It is commonly used to store and distribute large files.
    
