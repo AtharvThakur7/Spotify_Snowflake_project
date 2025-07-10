@@ -1,0 +1,34 @@
+# Spotify Data Pipeline to extract data , transform it and use it for Bussiness Analysis to understand Top and Trending  Playlists , songs , Artists and Albums .
+
+### Introduction
+
+In this Project created an ETL(Extract,Transform,Load) pipeline by using Spotify API , AWS cloud and Snowflake DB. The Project aims at using the playlist from Spotify API and transforming and storing cleaned data in AWS cloud storage and utilizing the data in snowflake using snowpipe.
+
+
+### Architecture
+![Architecture Diagram](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/df90a53740d9bf26fb273cf9a1116150d1431098/Architecture%20Diagram.png)
+
+
+
+### Services Used
+1. **AWS S3(Simple Storage Service):** AWS S3 is a highly saclable object storage service used for storing and retrieving any amount of data from anywhere using web. It is commonly used to store and distribute large files.
+   
+2. **AWS Lambda:** AWS Lambda is a serverless computing service that lets you run code without managing servers.
+   
+3. **Cloud Watch:** AWS Cloudwatch is a monitoring service for AWS Resources and the applications you run on them. It is used to collect and tracks metrics, collect and monitor log files and set alarms.
+
+4. **AWS Data Catalog:** AWS Data Catalog is a centralized metadata repository for all your data assets across various data sources. 
+
+5. **AWS GLue Crawler:**  AWS Data Catalog consists of AWS Glue Crawler which crawls the data sources and identifies data formats, infer schemas and create AWS Glue Data Catalog.
+
+6. **AWS Athena:**  Amazon Athena is a interactive query service that makes it easy to analyze data stored in S3 using standard SQL. It is also used to analyze stored in Glue Data Catalog.
+
+7.  **Snowflake:** Snowflake is a cloud-based data warehouse platform that allows users to store, analyze, and exchange data securely.
+
+8. **PowerBI:** Power BI is a business analytics service by Microsoft that allows organizations to connect to various data sources, transform and clean data, create interactive visualizations, and share insights with others.
+
+### DashBoard
+![Spotify_Dashboard](https://github.com/AtharvThakur7/Spotify_Snowflake_project/blob/8e7b211186a18fba0b56c898191ebe0d3dfeca07/Screenshot%202025-07-10%20140110.png)
+
+
+
